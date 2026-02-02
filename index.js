@@ -48,6 +48,18 @@ function capitalize(str) {
     return str[0].toUpperCase() + str.slice(1);
 }
 
+function reverseString(str) {
+    return str.split('').reverse().join('');
+}
 
 
-
+function countVowels (str) {
+    const vowels = "aeiouAEIOU";
+    let count = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (vowels.includes(str[i])) {
+            count++;
+        }
+    }
+    return count;
+}

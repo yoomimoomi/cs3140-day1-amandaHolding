@@ -63,3 +63,29 @@ function countVowels (str) {
     }
     return count;
 }
+
+// OBJECTS
+
+const student  = {
+
+name: "John Doe",
+
+age: 20,
+
+grades: [85, 90, 78],
+
+getAverage: function() {
+    let sum = 0;
+    for (const grade of this.grades) {
+        sum += grade;
+    }
+    return sum / this.grades.length;
+},
+
+isHonorRoll: function() {
+    return this.getAverage() >= 85;
+}
+
+}
+
+console.log(student);

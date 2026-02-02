@@ -29,10 +29,25 @@ function min(arr) {
     }
 }
 
-function min(arr) {
-    
+function max(arr) {
+    let max = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    return max;
+    }
 }
 
 // STRINGS
+
+let str = "hello world";
+
+function capitalize(str) {
+    if (str.length === 0) return str;
+    return str[0].toUpperCase() + str.slice(1);
+}
+
+
 
 
